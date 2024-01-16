@@ -1,6 +1,6 @@
 FROM python:3.8
 
-RUN apt-get update && apt-get install build-essential -y
+RUN apt-get update && apt-get install build-essential ffmpeg libsm6 libxext6 -y
 
 RUN pip install \
   --disable-pip-version-check \
